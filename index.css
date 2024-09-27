@@ -1,0 +1,398 @@
+/* Basic CSS Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body and general styling */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.7;
+    margin: 0;
+    padding: 0;
+    background-color: #2b2b2b; /* Dark grey background */
+    color: #e0e0e0; /* Light grey text */
+    font-size: 18px; /* Increased base font size */
+}
+
+/* Header */
+header {
+    background: #1a1a1a; /* Darker grey for header */
+    color: #ff4c4c; /* Red for text */
+    padding: 1.5rem 0; /* Increased padding for larger header */
+    text-align: center;
+    position: relative;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+}
+
+nav ul li {
+    margin: 0 20px;
+}
+
+nav ul li a {
+    color: #ff4c4c; /* Red for links */
+    text-decoration: none;
+    font-size: 20px; /* Increased font size */
+}
+
+.logo img {
+    max-width: 5000px;
+    height: 500px;
+}
+
+/* Home section */
+#home {
+    text-align: center;
+    padding: 5rem 1.5rem; /* Increased padding */
+    color: #ff4c4c; /* Red for text in home */
+}
+
+#home h1 {
+    font-size: 3rem; /* Larger heading */
+}
+
+.profile-image img {
+    max-width: 220px; /* Larger profile image */
+    border-radius: 50%;
+}
+
+.social-icons {
+    margin-top: 20px;
+}
+
+.social-icons li {
+    display: inline-block;
+    margin: 0 12px;
+}
+
+.social-icons a {
+    text-decoration: none;
+    font-size: 24px; /* Increased icon size */
+    color: #ff4c4c; /* Red for social icons */
+}
+
+button.download-resume {
+    padding: 12px 24px; /* Increased padding for button */
+    background: #ff4c4c; /* Red button */
+    color: white;
+    border: none;
+    cursor: pointer;
+    margin-top: 25px;
+    font-size: 18px; /* Larger button text */
+}
+
+/* About section */
+#about {
+    padding: 5rem 1.5rem; /* Increased padding */
+    text-align: center;
+    color: #e0e0e0; /* Light grey for text */
+}
+
+#about h2 {
+    font-size: 2.5rem; /* Larger section heading */
+    color: #ff4c4c; /* Red for section heading */
+}
+
+/* Skills section */
+.headskill{
+    text-align: center;
+}
+.skills-section {
+    padding: 20px;
+    background-color: #1e1e1e;
+    color: white;
+}
+
+.skills-list {
+    list-style-type: none;
+    padding: 0;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.skills-list li {
+    margin-bottom: 20px;
+}
+
+.skill-header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 5px;
+}
+
+.skill-name {
+    font-weight: bold;
+}
+
+.skill-level {
+    font-size: 14px;
+    color: #ccc;
+}
+
+.progress-bar {
+    width: 100%;
+    background-color: #333;
+    border-radius: 10px;
+    height: 20px;
+    overflow: hidden;
+}
+
+.progress {
+    height: 100%;
+    border-radius: 10px;
+    transition: width 1s ease-in-out;
+}
+
+/* Skill Progress Levels */
+.html {
+    width: 90%;
+    background-color: #4caf50; /* Green */
+}
+
+.javascript {
+    width: 75%;
+    background-color: #f39c12; /* Orange */
+}
+
+.python {
+    width: 40%;
+    background-color: #3498db; /* Blue */
+}
+
+.tailwind {
+    width: 75%;
+    background-color: #9b59b6; /* Purple */
+}
+
+/* Services section */
+#services {
+    padding: 5rem 1.5rem;
+    text-align: center;
+}
+
+#services ul.services-list {
+    list-style: none;
+    padding: 0;
+}
+
+#services ul.services-list li {
+    margin-bottom: 25px; /* Increased margin */
+    font-size: 1.2rem; /* Increased font size */
+    color: #e0e0e0; /* Light grey text */
+}
+
+/* Portfolio section */
+#portfolio {
+    background: #333; /* Dark grey background */
+    padding: 5rem 1.5rem;
+    text-align: center;
+}
+
+#portfolio ul.portfolio-list {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#portfolio ul.portfolio-list li {
+    margin: 25px; /* Increased margin */
+}
+
+#portfolio ul.portfolio-list img {
+    max-width: 100%;
+    height: auto;
+    border: 3px solid #ff4c4c; /* Red border around images */
+}
+/* Portfolio Section Styles */
+.portfolio-section {
+    padding: 50px;
+    background-color: #f9f9f9;
+}
+
+.portfolio-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.portfolio-card {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    width: 30%;
+    position: relative;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.portfolio-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-bottom: 3px solid #333;
+}
+
+.portfolio-content {
+    padding: 20px;
+}
+
+.portfolio-card h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.portfolio-card p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #666;
+}
+
+.portfolio-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Hover Effects */
+.portfolio-card:hover img {
+    opacity: 0.85;
+}
+
+/* Animation on Scroll */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.portfolio-card {
+    animation: fadeInUp 1s ease-in-out;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    .portfolio-card {
+        width: 100%;
+    }
+}
+/* Contact section */
+#contact {
+    padding: 5rem 1.5rem;
+    text-align: center;
+}
+
+#contact ul.contact-list {
+    list-style: none;
+    padding: 0;
+}
+
+#contact ul.contact-list li {
+    margin: 12px 0;
+}
+
+#contact ul.contact-list a {
+    color: #ff4c4c; /* Red for contact links */
+    text-decoration: none;
+    font-size: 1.2rem; /* Increased font size for links */
+}
+
+/* Footer */
+footer {
+    background: #1a1a1a; /* Dark grey */
+    color: #ff4c4c; /* Red text */
+    text-align: center;
+    padding: 1.5rem 0;
+    font-size: 1.1rem; /* Larger font size in footer */
+}
+
+/* Media Queries */
+
+/* Tablet */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+    }
+
+    #skills ul.skills-list {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #portfolio ul.portfolio-list {
+        flex-direction: column;
+    }
+
+    #portfolio ul.portfolio-list li {
+        width: 80%;
+        margin: 15px 0;
+    }
+
+    .profile-image img {
+        max-width: 180px;
+    }
+}
+
+/* Mobile (Threshold to 300px) */
+@media (max-width: 300px) {
+    nav ul {
+        flex-direction: column; /* Stack nav items vertically */
+        padding: 0;
+    }
+
+    nav ul li {
+        margin: 10px 0; /* Add space between nav items */
+    }
+
+    nav ul li a {
+        font-size: 16px; /* Reduce font size for smaller screens */
+    }
+
+    .logo img {
+        max-width: 100px; /* Smaller logo image */
+    }
+
+    header {
+        padding: 1rem 0; /* Reduce padding for smaller screens */
+    }
+
+    #home h1 {
+        font-size: 1.8rem; /* Adjust heading size for small screens */
+    }
+
+    .profile-image img {
+        max-width: 100px; /* Smaller profile image */
+    }
+
+    #skills ul.skills-list li {
+        margin: 5px 0;
+        font-size: 1rem; /* Adjust skill font size */
+    }
+
+    button.download-resume {
+        padding: 8px 14px; /* Smaller button */
+        font-size: 16px; /* Slightly reduced button text size */
+    }
+
+    #portfolio ul.portfolio-list {
+        flex-direction: column;
+    }
+
+    #portfolio ul.portfolio-list li {
+        width: 100%;
+        margin: 10px 0;
+    }
+}
